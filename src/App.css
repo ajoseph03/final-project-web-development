@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+/* You may remove App-logo, App-header, and @keyframes App-logo-spin if not needed */
+
+/* Enhanced styles for the home component and posts */
+.home {
+  padding: 20px;
+  color: white; /* Change the text color for better contrast against the background */
+  font-weight: bold
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.posts-list {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post-item {
+  border: 1px solid #ddd;
+  padding: 20px; /* Increased padding */
+  margin-bottom: 15px; /* Increased margin */
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 5; /* Larger font size */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.post-item:hover {
+  background-color: #099967;
+}
+
+.post-time {
+  font-size: 1em;
+  color: #3bd5a2;
+}
+
+.post-title {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.5em; /* Larger font size */
+}
+
+.post-upvotes {
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
+/* Styles for individual post page */
+.post-page {
+  background-color: rgb(2, 49, 2); /* Forest green background */
+  padding: 20px;
+  color: white; /* White text for readability */
+  font-size: 1.5em; /* Larger font size */
+}
+
+/* Smaller images on post pages */
+.post-page img {
+  max-width: 20%; /* Adjust the size as needed */
+  height: auto;
+}
+
+/* Keep inputs and buttons closer to standard for usability */
+input, textarea, button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Non-cursive font for inputs */
+  font-size: 1em;
+}
+
+/* App.css */
+
+/* Styles for CreatePost component */
+.create-post {
+  color: white; /* This will set the text color to white */
+  /* Other styles for the create post page */
+}
+
+.create-post input,
+.create-post textarea,
+.create-post button {
+  color: black; /* Ensures input text is readable */
+  /* You may want to add more styles to inputs and buttons to fit your design */
+}
+
+/* Optionally, if you want to make all placeholder text white too */
+.create-post ::placeholder {
   color: white;
+  opacity: 1; /* Firefox reduces the opacity by default */
 }
 
-.App-link {
-  color: #61dafb;
+.upvote-button {
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px; /* Add some space between the button and the upvote count */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.upvote-button:hover {
+  background-color: #367c39;
+}
+
+.home a, .home a:visited, .home a:hover, .home a:active {
+  color: white; /* This sets the text color to white for all link states */
+  text-decoration: none; /* This removes the underline from the link */
+}
+
+/* Specific styles for the upvote button */
+.upvote-button {
+  /* Add your styles here to override Link styles */
+  background-color: #4CAF50; /* Example background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* No underline */
+  /* Other button styling */
+}
+
+/* You may also want to add styles for hover state */
+.upvote-button:hover {
+  text-decoration: none; /* Ensures no underline appears on hover */
+  /* Other hover styles */
 }
